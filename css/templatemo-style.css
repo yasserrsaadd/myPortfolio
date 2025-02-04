@@ -20,7 +20,7 @@ hr {
 }
 .title {
   color: #303030;
-  font-size: 60px;
+  font-size: 40px;
   padding-bottom: 40px;
   text-transform: uppercase;
 }
@@ -633,7 +633,14 @@ body {
   .tm-home-title { font-size: 40px; }
   .social-link{
   position: relative;
-  right: 50px;  }
+  right: 50px;  
+}
+h1{
+  color: red;
+}
+.title{
+  font-size: 27px;
+}
 }
 
 
@@ -641,5 +648,6 @@ body {
 /* START MEDIA 360 */
 @media screen and (max-width:360px){
   .navbar-default .navbar-brand {  padding-top: 2px; }
+  
 }
 /* END MEDIA 360 */
