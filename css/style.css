@@ -803,6 +803,10 @@ h1{
 .title{
   font-size: 27px;
 }
+
+.info{
+  color: red;
+}
 }
 
 
