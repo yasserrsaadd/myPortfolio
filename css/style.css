@@ -174,7 +174,7 @@ hr {
   }
 }
 .templatemo-home {
-  background: url('../images/home-bg.jpg');
+  background: url('../images/Mobile\ Background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -194,9 +194,12 @@ hr {
  .tm-home-subtitle {
   text-transform: uppercase;
  }
-.tm-home-title { font-size: 60px; }
+.tm-home-title { 
+  font-size: 60px;
+  color: rgb(218, 218, 218);
+ }
 .tm-home-subtitle {
-  color: #eb5424;
+  color: #ff3c00;
   font-weight: bold;
   padding-bottom: 40px;
   letter-spacing: 2px;
@@ -216,6 +219,10 @@ hr {
 .tm-view-more-btn:hover {
   background: #ffffff;
   color: #eb5424;
+}
+
+.info{
+  color: white;
 }
 /* END HOME */
 
@@ -803,12 +810,10 @@ h1{
   font-size: 27px;
 }
 
-.info{
-  color: red;
-}
+
 
 .templatemo-home{
-    background: url('../images/Bookstore.jpeg');
+    background: url('../images/Mobile\ Background.jpg');
 
 }
 }
