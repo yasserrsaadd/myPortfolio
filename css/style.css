@@ -142,7 +142,6 @@ hr {
 
 /* START HOME */
 
-/* Update your home section */
 .templatemo-home {
   animation: subtleBackgroundMove 20s infinite alternate ease-in-out;
 }
@@ -774,7 +773,7 @@ ul li:nth-child(3):hover span{
     height: 45px;
   }
 }
-}
+
 /* End footer  */
 
 
@@ -806,6 +805,11 @@ h1{
 
 .info{
   color: red;
+}
+
+.templatemo-home{
+    background: url('../images/Bookstore.jpeg');
+
 }
 }
 
