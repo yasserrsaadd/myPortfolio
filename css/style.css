@@ -241,8 +241,19 @@ hr {
 
 
 .tm-padding-top-bottom-100 {
+  background-image:url(https://images.unsplash.com/photo-1530176928500-2372a88e00b5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: repeat-y;       /* Repeat vertically */
+  background-size: 100% auto;        /* Fit horizontally, repeat vertically */
+
+  background-size: cover;
+   animation: scrollBg 30s linear infinite;
+  
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@keyframes scrollDown {
+  from { background-position: 0 0; }
+  to   { background-position: 0 100%; }
 }
 .tm-work-h3 {
   color: #eb5424;
@@ -423,6 +434,7 @@ hr {
   text-transform: uppercase;
 }
 .progress-percent-small {
+  font-size: 12px;
   display: block;
   float: right;
   padding-right: 80px;
@@ -469,7 +481,7 @@ ul li:after{
 ul li span{
   position: absolute;
   top: 0;
-  lef: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex !important;
@@ -521,9 +533,11 @@ ul li:nth-child(3):hover span{
 
 .skill-card {
     margin-bottom: 20px;
+    
 }
 
-.skill-card h3 {
+
+.skill-card h3,  {
     margin: 0;
     color: #007BFF;
     font-size: 20px;
