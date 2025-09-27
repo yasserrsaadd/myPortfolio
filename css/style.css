@@ -434,7 +434,8 @@ hr {
   text-transform: uppercase;
 }
 .progress-percent-small {
-  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
   display: block;
   float: right;
   padding-right: 80px;
