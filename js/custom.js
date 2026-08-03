@@ -54,6 +54,26 @@ jQuery(document).ready(function($){
 
 	}
 
+  
+  // reveal elements as they scroll into view
+  var scrollRevealElements = $('.animate-on-scroll, .project-card, .skill-card, .animate-from-left, .animate-from-right, .animate-from-bottom');
+  if (scrollRevealElements.length) {
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            $(entry.target).addClass('animate-active');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      scrollRevealElements.each(function() {
+        revealObserver.observe(this);
+      });
+    } else {
+      scrollRevealElements.addClass('animate-active');
+    }
+  }
 });
 
 
